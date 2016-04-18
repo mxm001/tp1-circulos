@@ -4,8 +4,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class CirculoTest {
-
-	
 	
 	@Test
 	public void crearUnCirculoConRadio2() {
@@ -36,16 +34,18 @@ public class CirculoTest {
 	}
 	
 	@Test
-	public void queElAreaDeUnCirculoConRadio9Punto8Es615Punto73() {
+	public void queElAreaDeUnCirculoConRadio9Punto8Es301Punto56() {
 		Circulo miCirculo = new Circulo(9.8);
 		
-		assertEquals(615.73, miCirculo.obtenerAreaDeUnCirculo(),0.01);
+		assertEquals(301.56, miCirculo.obtenerAreaDeUnCirculo(),0.01);
 	}
 	
-	/*@Test
-	public void crearUnCirculoConRadio16Punto6Es865Punto67() {
-		fail("Not yet implemented");
-	}*/
+	@Test
+	public void queElAreaDeUnCirculoConRadio16Punto6Es865Punto25() {
+		Circulo miCirculo = new Circulo(16.6);
+		
+		assertEquals(865.25, miCirculo.obtenerAreaDeUnCirculo(),0.01);
+	}
 	
 	@Test
 	public void queElTipDeAyudaDeVerde(){ // :)
